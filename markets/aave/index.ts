@@ -23,6 +23,7 @@ import {
   strategyWETH,
   strategyYFI,
   strategyXSUSHI,
+  strategyBOND,
 } from './reservesConfigs';
 
 // ----------------
@@ -36,6 +37,7 @@ export const AaveConfig: IAaveConfiguration = {
   ReservesConfig: {
     AAVE: strategyAAVE,
     BAT: strategyBAT,
+    BOND: strategyBOND,
     BUSD: strategyBUSD,
     DAI: strategyDAI,
     ENJ: strategyREN,
@@ -63,6 +65,7 @@ export const AaveConfig: IAaveConfiguration = {
     [EthereumNetwork.kovan]: {
       AAVE: '0xB597cd8D3217ea6477232F9217fa70837ff667Af',
       BAT: '0x2d12186Fbb9f9a8C28B3FfdD4c42920f8539D738',
+      BOND: '0xc40a66AFB908789341A58B8423F89fE2cb7Dc1f9',
       BUSD: '0x4c6E1EFC12FDfD568186b7BAEc0A43fFfb4bCcCf',
       DAI: '0xFf795577d9AC8bD7D90Ee22b6C1703490b6512FD',
       ENJ: '0xC64f90Cd7B564D3ab580eb20a102A8238E218be2',
@@ -85,6 +88,7 @@ export const AaveConfig: IAaveConfiguration = {
     [EthereumNetwork.ropsten]: {
       AAVE: '',
       BAT: '0x85B24b3517E3aC7bf72a14516160541A60cFF19d',
+      BOND: ZERO_ADDRESS,
       BUSD: '0xFA6adcFf6A90c11f31Bc9bb59eC0a6efB38381C6',
       DAI: '0xf80A32A835F79D7787E8a8ee5721D0fEaFd78108',
       ENJ: ZERO_ADDRESS,
@@ -107,6 +111,7 @@ export const AaveConfig: IAaveConfiguration = {
     [EthereumNetwork.main]: {
       AAVE: '0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9',
       BAT: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
+      BOND: '0x0391D2021f89DC339F60Fff84546EA23E337750f',
       BUSD: '0x4Fabb145d64652a948d72533023f6E7A623C7C53',
       DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
       ENJ: '0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c',
@@ -130,6 +135,7 @@ export const AaveConfig: IAaveConfiguration = {
     [EthereumNetwork.tenderlyMain]: {
       AAVE: '0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9',
       BAT: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
+      BOND: '0x0391D2021f89DC339F60Fff84546EA23E337750f',
       BUSD: '0x4Fabb145d64652a948d72533023f6E7A623C7C53',
       DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
       ENJ: '0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c',
